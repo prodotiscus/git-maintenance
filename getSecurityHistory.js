@@ -7,7 +7,7 @@ function getSecurityHistory() {
     var keys = brp2[k].querySelectorAll("th");
     var values = brp2[k].querySelectorAll("tr");
     for (var j = 0; j < keys.length; j ++) {
-      local[keys[j]] = values[j];
+      local[keys[j].innerText] = values[j].innerText;
     }
     history.push({
       event: local,
